@@ -1,0 +1,18 @@
+{
+  "name": "trueconftest",
+  "version": "1.0.0",
+  "description": "testovoe zadanie",
+  "main": "less.min.js",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "vika",
+  "license": "ISC"
+}
