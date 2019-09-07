@@ -13,8 +13,7 @@ export default new Router({
     }
     ,{
       path: '/:id',
-      name: '/:id',
-      props: true,
+      name: 'slide1',
       component: () => import(/* webpackChunkName: "about" */ './views/slide1.vue')
     }
   ]
