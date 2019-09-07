@@ -1,14 +1,15 @@
 <template>
   <div class="container">
             <div class="light">
-                <div class="light-red light-red-opacity"></div>
-                <div class="light-yellow light-yellow-opacity"></div>
-                <div class="light-green light-green-opacity"></div>
+                <div class="light-red-opacity"></div>
+                <div v-bind:class="{ 'light-yellow': $route.params.id == 2 }" class="light-yellow-opacity"></div>
+                <div v-bind:class="{ 'light-green': $route.params.id == 3 }" class="light-green-opacity"></div>
             </div>
         </div>
 </template>
 
-<style scoped>
+
+<style lang="less" scoped>
 .container{
     display: flex;
     flex-direction: column;
@@ -27,38 +28,41 @@
     align-items: center;
 }
 
-.light-red{
+.light-container{
     width: 150px;
     height: 150px;
-    background-color: red;
     border-radius: 50%;
+}
+
+.light-red{
+  .light-container;
+    background-color: red;
 }
 
 .light-yellow{
-    width: 150px;
-    height: 150px;
+    .light-container;
     background-color: yellow;
-    border-radius: 50%;
 }
 
 .light-green{
-    width: 150px;
-    height: 150px;
+  .light-container;
     background-color: green;
-    border-radius: 50%;
 }
 
 .light-red-opacity{
+    .light-container;
     background-color: red;
     opacity: 0.3;
 }
 
-/* .light-yellow-opacity{
+.light-yellow-opacity{
+    .light-container;
     background-color: yellow;
     opacity: 0.3;
-} */
+}
 
 .light-green-opacity{
+    .light-container;
     background-color: green;
     opacity: 0.3;
 }
