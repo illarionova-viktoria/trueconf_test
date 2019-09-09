@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -13,8 +12,8 @@ export default new Router({
     }
     ,{
       path: '/:id',
-      name: 'slide1',
-      component: () => import(/* webpackChunkName: "about" */ './views/slide1.vue')
+      name: 'semaphore',
+      component: () => import('./components/semaphore.vue')
     }
   ]
 })

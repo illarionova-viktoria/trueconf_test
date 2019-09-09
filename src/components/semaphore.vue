@@ -57,14 +57,14 @@ methods:{
       
       if(this.$route.params.id == '1' && this.start == 1){
         t.timerId = setTimeout(function(){
-      t.$router.push({ name: 'slide1', params: { id: 2 }});
+      t.$router.push({ name: 'semaphore', params: { id: 2 }});
     }, 10000);
         
       }
 
       if(this.$route.params.id == '2' && this.start == 1){
         t.timerId = setTimeout(function(){
-      t.$router.push({ name: 'slide1', params: { id: 3 }});
+      t.$router.push({ name: 'semaphore', params: { id: 3 }});
     }, 3000);
 
 
@@ -72,13 +72,13 @@ methods:{
 
       if(this.$route.params.id == '2' && this.start ==3){
         t.timerId = setTimeout(function(){
-      t.$router.push({ name: 'slide1', params: { id: 1 }});
+      t.$router.push({ name: 'semaphore', params: { id: 1 }});
     }, 3000);
       }
 
       if(this.$route.params.id == '3' && this.start == 3){
         t.timerId = setTimeout(function(){
-      t.$router.push({ name: 'slide1', params: { id: 2 }});
+      t.$router.push({ name: 'semaphore', params: { id: 2 }});
     }, 15000);
       }
     },
